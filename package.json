@@ -1,0 +1,19 @@
+{
+  "name": "demo-01-intro",
+  "version": "1.0.0",
+  "description": "Demo d'introduction d'express JS",
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "Olivier"
+  ],
+  "license": "ISC",
+  "author": "Aurélien St",
+  "type": "module",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
