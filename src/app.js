@@ -2,7 +2,7 @@
 import express from "express";
 
 //! Constantes
-const PORT = 8080;
+const { PORT, NODE_ENV } = process.env;
 
 //! Initialiser le web server via express
 const app = express();
@@ -22,11 +22,11 @@ app.get('/coucou', (req, res) => {
 
 //! Démarrer le serveur
 app.listen(PORT, (error) => {
-    if(error) {
+    if (error) {
         console.log('Erreur lors du démarage du serveur !');
         console.log(error);
         return;
     }
 
-    console.log(`Le serveur Web tourne sur le port ${PORT}`);
-})
+    console.log(`Le serveur Web tourne sur le port ${PORT} (${NODE_ENV})`);
+});
