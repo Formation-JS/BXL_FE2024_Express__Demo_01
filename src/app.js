@@ -1,5 +1,6 @@
-//! Importer express
+//! Les Imports
 import express from "express";
+import vetementRouter from "./routers/vetement.router.js";
 
 //! Constantes
 const { PORT, NODE_ENV } = process.env;
@@ -19,6 +20,10 @@ app.get('/coucou', (req, res) => {
     //? Solution
     res.send('Bonjour');
 });
+
+//! Ajouter le mecanisme de routing (via les objets "Router")
+app.use('/vetement' ,vetementRouter);
+
 
 //! Démarrer le serveur
 app.listen(PORT, (error) => {
