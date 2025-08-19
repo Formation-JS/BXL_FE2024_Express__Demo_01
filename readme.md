@@ -21,5 +21,5 @@ Permet de créer des constantes d'environnment qui peuvent être defini :
  - (Hebergeur) Variable d'env injecté depuis la configuration.
 
 ### Lier le fichier et l'application
-- Utiliser un package « dotenv » !(Lien)[https://www.npmjs.com/package/dotenv]
-- Depuis Node 22, utiliser l'arguement « --env-file=... »  (Lien)[https://nodejs.org/en/learn/command-line/how-to-read-environment-variables-from-nodejs]
+- Utiliser un package « dotenv » [Documentation](https://www.npmjs.com/package/dotenv)
+- Depuis Node 22, utiliser l'arguement « --env-file=... »  [Documentation](https://nodejs.org/en/learn/command-line/how-to-read-environment-variables-from-nodejs)
